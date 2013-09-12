@@ -18,7 +18,7 @@ class window.TextSizer
     @elements.each((i, el)=>
       el=$(el)
       text_size = el.text().length
-      max = @sizes[@sizes.length]
+      max = @sizes[@sizes.length - 1]
       for size in @sizes
         if size.max >= text_size && size.min <= text_size
           max = size
